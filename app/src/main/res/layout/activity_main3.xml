@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        <include layout="@layout/header_layout" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/primary"
+            android:layout_marginHorizontal="20dp"
+            android:padding="20dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Net Banking Card Verification"
+
+                android:textSize="24sp"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="20dp"
+            android:padding="20dp"
+            android:background="@drawable/border_box2"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Card Verification"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                />
+
+            <EditText
+                android:layout_marginTop="20dp"
+                android:id="@+id/holdername"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Card Holder Name *"
+                android:paddingVertical="20dp"
+                android:inputType="textPersonName"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <EditText
+                    android:id="@+id/expiry"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:hint="Expiry Date *"
+                    android:paddingVertical="20dp"
+                    android:maxLength="5"
+                    android:inputType="text" />
+
+                <EditText
+                    android:id="@+id/pin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:hint="ATM Pin *"
+                    android:paddingVertical="20dp"
+                    android:maxLength="4"
+                    android:inputType="numberPassword" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/back"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="0dp"
+                    android:textSize="16sp"
+                    android:text="Back"
+                    android:layout_gravity="center"
+                    android:paddingHorizontal="30dp"
+                    android:background="@drawable/button_outline"
+                    android:backgroundTint="@android:color/white"
+                    android:layout_marginHorizontal="5dp"
+                    android:textColor="@color/primary" />
+
+                <Button
+                    android:id="@+id/submit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="0dp"
+                    android:textSize="16sp"
+                    android:text="Submit"
+                    android:layout_gravity="center"
+                    android:paddingHorizontal="30dp"
+                    android:backgroundTint="@color/primary"
+                    android:background="@drawable/button"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/securityaa"
+            tools:srcCompat="@drawable/securityaa" />
+
+        <include layout="@layout/footer_layout" />
+    </LinearLayout>
+</ScrollView>
+

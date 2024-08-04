@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        <include layout="@layout/header_layout" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/primary"
+            android:layout_marginHorizontal="20dp"
+            android:padding="20dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Net Banking Profile Verification"
+
+                android:textSize="24sp"
+                android:textColor="@color/white"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="X"
+
+                android:textSize="25sp"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="20dp"
+            android:padding="20dp"
+            android:background="@drawable/border_box2"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile and DOB Verification"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                />
+
+            <EditText
+                android:layout_marginTop="20dp"
+                android:id="@+id/ppassowd"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Profile Password *"
+                android:paddingVertical="20dp"
+                android:inputType="textPassword"
+                />
+
+            <TextView
+                android:id="@+id/forgetProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Forget Profile Password ?"
+                android:textSize="15dp"
+                android:layout_gravity="end"
+                android:textColor="@color/primary"
+                />
+
+            <EditText
+                android:layout_marginTop="10dp"
+                android:id="@+id/dob"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Date of Birth *"
+                android:paddingVertical="20dp"
+                android:maxLength="10"
+                android:inputType="text"
+                />
+            <TextView
+                android:paddingTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Please Note:-"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:layout_gravity="start"
+                android:textColor="@color/red"
+                />
+
+            <TextView
+                android:paddingBottom="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile password is defferent from login password."
+                android:textSize="16sp"
+                android:layout_gravity="start"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/back"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="0dp"
+                    android:textSize="16sp"
+                    android:text="Back"
+                    android:layout_gravity="center"
+                    android:paddingHorizontal="30dp"
+                    android:background="@drawable/button_outline"
+                    android:backgroundTint="@android:color/white"
+                    android:layout_marginHorizontal="5dp"
+                    android:textColor="@color/primary" />
+
+                <Button
+                    android:id="@+id/submit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="0dp"
+                    android:textSize="16sp"
+                    android:text="LOG IN"
+                    android:layout_gravity="center"
+                    android:paddingHorizontal="30dp"
+                    android:backgroundTint="@color/primary"
+                    android:background="@drawable/button"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/security"
+            tools:srcCompat="@drawable/security" />
+
+        <include layout="@layout/footer_layout" />
+    </LinearLayout>
+</ScrollView>
+
